@@ -14,6 +14,9 @@
 
 - https://madaboutbrighton.net/articles/2015/remote-control-media-player-without-lirc-using-ir-keymap
 
+- https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup#method-1-rclocal
+
+- https://randomnerdtutorials.com/dht11-vs-dht22-vs-lm35-vs-ds18b20-vs-bme280-vs-bmp180/
 
 ## Raspberry Pi version
 - OS: Linux raspberrypi 4.19.97+ #1294 Thu Jan 30 13:10:54 GMT 2020 armv6l GNU/Linux
