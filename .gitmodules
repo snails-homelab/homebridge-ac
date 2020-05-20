@@ -1,0 +1,3 @@
+[submodule "WEATHER-BOARD"]
+	path = WEATHER-BOARD
+	url = https://github.com/hardkernel/WEATHER-BOARD.git
