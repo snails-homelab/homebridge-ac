@@ -13,7 +13,7 @@ const { execSync } = require('child_process');
 
 var command = "ir-ctl --device=/dev/lirc0 --send=/home/pi/homebridge_plugins/homebridge-ac/ir-signals/";
 
-var dhtCommand = "python /home/pi/homebridge_plugins/homebridge-ac/dht.py";
+var wbCommand = "/home/pi/homebridge_plugins/homebridge-ac/WEATHER-BOARD/c_weather/weather_board";
 
 module.exports = function(homebridge) {
   Service = homebridge.hap.Service;
@@ -115,11 +115,11 @@ AirConditionerAccessory.prototype.setTargetState = function(_targetState, callba
 }
 
 AirConditionerAccessory.prototype.getTemperature = function(callback) {
-  let stdout = execSync(dhtCommand);
+  let stdout = execSync(wbCommand);
   if (isNaN(stdout)) {
     this.log("ERROR: fail to get temperature.");
   } else {
-    temperature = stdout;
+    temperature = stdout - 1.5;
     this.log("Get temperature: %s", temperature);
   }
   callback(null, temperature);
